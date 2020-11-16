@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name ="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,0">
+    <title>Carrusel 3D</title>
+
+</head>
+
+
+<body background="tresd16.gif">>
+    <div class="contenedor">
+<header>
+        
+        <nav>
+        <ul>
+            <img src="ESCUADRON.jpg" align="left" style="width:8%;
+    height: 25%;
+ margin-left:3px;">
+<h1 style="background-color:#7D7F8D  ;">EL JUEGO DE ENDER</h1>
+            <br><br>
+            <li><a href="portada.html">PORTADA DEL LIBRO</a></li>
+            <li><a href="autor.html">AUTOR DEL LIBRO</a></li>
+             <li><a href="acerca del libro.html">ACERCA DEL LIBRO</a></li>
+            <li><a href="leer.html">LEER EL LIBRO</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="fotos.html">FOTOGRAFIAS</a></li>
+            <li><a href="puzzle.html">PUZZLE</a></li>
+            <li><a href="ventas.html">VENTAS</a></li>
+        </ul>
+    </header>
+    
+    </nav>
+<style>
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+ul{
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+        overflow: hidden;
+        
+        top:0;
+        width: 100%;
+}
+
+header nav ul li a:hover {
+    background:#0D30EF  ;
+}
+    li{
+
+        float:left;
+        border-right:1px solid #bbb;
+    }
+li a {
+
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+    li a:honer:not(.active){
+        background-color: red;
+}
+
+
+
+
+h1{
+
+ margin-top: 10px;
+  color:#0A26D3 ;
+   font-size: 400%;
+}
+
+
+   
+
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: Ink Free;
+    margin-top: 80px;
+    color: aqua;
+    text-shadow: 0px 0px 6px black;
+}
+
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+</style>
+
+
+    <h2>MI GALERIA CARRUSEL</h2>
+    <div class="content-all">
+        <div class="content-carrousel">
+            <figure><img src="MYA1.jpg"></figure>
+            <figure><img src="MYA2.jpg"></figure>
+            <figure><img src="MYA3.jpg"></figure>
+            <figure><img src="MYA4.jpg"></figure>
+            <figure><img src="MYA5.jpg"></figure>
+            <figure><img src="MYA6.jpg"></figure>
+            <figure><img src="MYA7.jpg"></figure>
+            <figure><img src="MYA8.jpg"></figure>
+            <figure><img src="MYA9.jpg"></figure>
+            <figure><img src="MYA10.jpg"></figure>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrusel 3D</title>
+  
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: Ink Free;
+    margin-top: 80px;
+    color: aqua;
+    text-shadow: 0px 0px 6px black;
+}
+
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+</style>
+
+<h2>MIs FRASES CARRUSEL</h2>
+    <div class="content-all">
+        <div class="content-carrousel">
+            <figure><img src="frase1.jpg"></figure>
+            <figure><img src="frase2.jpg"></figure>
+            <figure><img src="frase3.jpg"></figure>
+            <figure><img src="frase4.jpg"></figure>
+            <figure><img src="frase5.jpg"></figure>
+            <figure><img src="frase6.jpg"></figure>
+            <figure><img src="frase7.jpg"></figure>
+            <figure><img src="frase8.jpg"></figure>
+            <figure><img src="frase9.jpg"></figure>
+            <figure><img src="frase10.jpg"></figure>
+        </div>
+    </div>
+    
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</body>
+</html>

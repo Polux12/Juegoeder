@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<style type="text/css">
+ 
+  
+
+ul{
+        list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    
+    
+    top:0;
+    width: 100%;
+}
+
+header nav ul li a:hover {
+  background:#0D30EF  ;
+}
+  li{
+
+    float:left;
+    border-right:1px solid #bbb;
+  }
+li a {
+
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+  li a:honer:not(.active){
+    background-color: red;
+}
+
+
+
+
+h1{
+
+ margin-top: 10px;
+  color:#0A26D3;
+   font-size: 400%;
+}
+
+
+  body {
+
+border: 12px;
+  background-color: red;
+  width:80%
+  text: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  table {
+
+  border: #13B3C6  10px solid;
+  background: #91F0E8;
+
+}
+
+
+td {
+  border: #06ECF3   8px solid;
+}
+  
+th{
+  color:#153915  ;
+  background:#02CD05  ;
+}
+
+</style>
+
+<body background="taza.jpg">
+<nav>
+        <ul>
+            <img src="ESCUADRON.jpg" align="left" style="width:8%;
+    height: 25%;
+ margin-left:3px;">
+<h1 style="background-color:#7D7F8D  ;">EL JUEGO DE ENDER</h1>
+            <br><br>
+            <li><a href="portada.html">PORTADA DEL LIBRO</a></li>
+            <li><a href="autor.html">AUTOR DEL LIBRO</a></li>
+             <li><a href="acerca del libro.html">ACERCA DEL LIBRO</a></li>
+            <li><a href="leer.html">LEER EL LIBRO</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="fotos.html">FOTOGRAFIAS</a></li>
+            <li><a href="puzzle.html">PUZZLE</a></li>
+            <li><a href="ventas.html">VENTAS</a></li>
+        </ul>
+<TABLE >
+  <TR>
+    <TH>CARRITO DE VENTAS DEL JUEGO DE ENDER</T  </TR>
+  
+    <TD><img src="taza4.jpg" style="width:50%"  align="center">
+   
+      <h2 class="azul">¿Desea comprar esta taza con <br>
+      serigrafiado de el juego de ender ?</h2>
+      <h3 class="azul">-Libro del Juego de Ender</h3>
+      <h3 class="azul">-Autografiado por Orson Scott Card</h3>
+      <h3 class="azul">Precio  por unidad: 40bs</h3>
+      <input type="number" id="unidades" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir1()" style="width:auto;">Pedir</button>
+
+
+    </TD> <TD>  <img src="canguro.jpg" style="width:90%" align="center">
+    
+      <div id="canguro">
+      <h2 class="azul">¿Desea comprar este canguro?</h2>
+      <h3 class="azul">-Muñeco del Juego de Ender</h3>
+      <h3 class="azul">-Autografiado por Orson Scott Card</h3>
+      <h3 class="azul">Precio  por unidad: 80bs</h3>  
+<input type="number" id="unidades2" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir2()" style="width:auto;">Pedir</button>
+
+    </TD> 
+
+
+ <TD>  <img src="audifonos.jpg" style="width:90%">
+    
+      <div id="canguro">
+      <h2 class="azul">¿Desea comprar estos audifonos?</h2>
+      <h3 class="azul">audifonos del Juego de Ender</h3>
+      <h3 class="azul">Autografiado por Orson Scott Card</h3>
+      <h3 class="azul">Precio  por unidad: 80bs</h3>  
+<input type="number" id="unidades3" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir3()" style="width:auto;">Pedir</button>
+
+    </TD>
+
+
+    <TD><img src="cd 1.jpg" style="width:70%">
+    </div>
+     <div class="column">
+      <h2 class="azul">¿Desea comprar la Pelicula?</h2>
+      <h4 class="azul">-Pelicula del Juego de Ender</h4>
+      <h4 class="azul">-Blu-ray Disc</h4>
+      <h3 class="azul">Precio  por unidad: 5bs</h3>
+      <br>
+      <input type="number" id="unidades4" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir4()" style="width:auto;">Pedir</button></TD>
+  </TR>
+  <TR>
+    <TD>  <img src="cuaderno.jpg" style="width:100%">
+    </div>
+     <div class="column">
+      <h2 class="azul">¿Desea comprar un cuaderno?</h2>
+      <h4 class="azul">-Polera del Juego de Ender</h4>
+      <h3 class="azul">Precio por unidad: 50bs</h3>
+      <br>
+      <input type="number" id="unidades5" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir5()" style="width:auto;">Pedir</button></TD> 
+    <TD>
+      
+        <img src="reloj.jpg" style="width:40%">
+    </div>
+     <div class="column">
+      <h2 class="azul">¿Desea comprar un reloj?</h2>
+      <h4 class="azul">-Polera del Juego de Ender</h4>
+      <h3 class="azul">Precio por unidad: 50bs</h3>
+      <br>
+      <input type="number" id="unidades6" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir6()" style="width:auto;">Pedir</button>
+    </TD>  
+  <TD>
+      <img src="libroventas.jpg" style="width:80%">
+    </div>
+     <div class="column">
+      <h2 class="azul">¿Desea comprar un libro?</h2>
+      <h4 class="azul">-Polera del Juego de Ender</h4>
+      <h3 class="azul">Precio por unidad: 23bs</h3>
+      <br>
+      <input type="number" id="unidades7" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir7()" style="width:auto;">Pedir</button>
+  </TD>
+
+ <TD>
+      
+        <img src="traje.jpg" style="width:70%">
+    </div>
+     <div class="column">
+      <h2 class="azul">¿Desea comprar un traje?</h2>
+      <h4 class="azul">-traje del Juego de Ender</h4>
+      <h3 class="azul">Precio por unidad: 170bs</h3>
+      <br>
+      <input type="number" id="unidades8" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir8()" style="width:auto;">Pedir</button>
+    </TD> 
+
+
+<TD>
+      <img src="polera.jpg" style="width:70%">
+    </div>
+     <div class="column">
+      <h2 class="azul">¿Desea comprar una polera?</h2>
+      <h4 class="azul">-Polera del Juego de Ender</h4>
+      <h3 class="azul">Precio por unidad: 52bs</h3>
+      <br>
+      <input type="number" id="unidades9" placeholder="Cantidad">
+      <button type="button" class="n1" onclick="pedir9()" style="width:auto;">Pedir</button>
+  </TD>
+
+
+
+
+  </TR>
+</TABLE>  
+
+
+
+
+
+
+
+
+
+<section style="background-color:blue;">>
+<a    style="background-color:white;"href="INDEX.html" class="button">CANCELAR COMPRAS Y VOLVER AL MENU DE INICIO</a>
+</div>
+  <center><h2><label>Pedido Actual: </label></h2>
+      <p id="areaResultado1"></p>
+      <p id="areaResultado2"></p>
+      <p id="areaResultado3"></p>
+      <p id="areaResultado4"></p>
+      <p id="areaResultado5"></p>
+      <p id="areaResultado6"></p>
+      <p id="areaResultado7"></p>
+      <p id="areaResultado8"></p>
+      <p id="areaResultado9"></p>
+      <p id="areaResultado10"></p>
+      <p> Para reiniciar el pedido (F5)</p>
+  <center><h2><label>Total a cancelar : </label></h2>
+    <p id="areaResultado"></p>
+</section>
+
+
+<script type="text/javascript">
+  var total = 0
+  var total1 = 0
+  var total2 = 0
+  var total3 = 0
+  var total4 = 0
+  var total5 = 0
+  var total6 = 0
+  var total7 = 0
+  var total8 = 0
+   var total9 = 0
+
+
+
+
+  function pedir1(){
+        var n = parseInt(document.getElementById("unidades").value);
+        var w = parseInt(40*n)
+        total1 = total1 + w
+        total = total + w
+        areaResultado1.innerHTML = ("taza4 "+total1+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir2(){
+        var n = parseInt(document.getElementById("unidades2").value);
+        var w = parseInt(80*n)
+        total2 = total2 + w
+        total = total + w
+        areaResultado2.innerHTML = ("canguro "+total2+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir3(){
+        var n = parseInt(document.getElementById("unidades3").value);
+        var w = parseInt(5*n)
+        total3 = total3 + w
+        total = total + w
+        areaResultado3.innerHTML = ("audifonos: "+total3+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir4(){
+        var n = parseInt(document.getElementById("unidades4").value);
+        var w = parseInt(50*n)
+        total4 = total4 + w
+        total = total + w
+        areaResultado4.innerHTML = ("cd 1: "+total4+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+
+    function pedir5(){
+        var n = parseInt(document.getElementById("unidades5").value);
+        var w = parseInt(50*n)
+        total5 = total5 + w
+        total = total + w
+        areaResultado5.innerHTML = ("cuaderno: "+total5+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir6(){
+        var n = parseInt(document.getElementById("unidades6").value);
+        var w = parseInt(50*n)
+        total6 = total6 + w
+        total = total + w
+        areaResultado6.innerHTML = ("reloj: "+total6+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir7(){
+        var n = parseInt(document.getElementById("unidades7").value);
+        var w = parseInt(23*n)
+        total7 = total7 + w
+        total = total + w
+        areaResultado7.innerHTML = ("libroventa: "+total7+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir8(){
+        var n = parseInt(document.getElementById("unidades8").value);
+        var w = parseInt(170*n)
+        total8 = total8 + w
+        total = total + w
+        areaResultado8.innerHTML = ("traje: "+total8+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+    function pedir9(){
+        var n = parseInt(document.getElementById("unidades9").value);
+        var w = parseInt(52*n)
+        total9 = total9 + w
+        total = total + w
+        areaResultado9.innerHTML = ("Polera: "+total9+" Bs.");
+      areaResultado.innerHTML = (" "+total+" Bs.");
+    }
+
+    /*function completado(){
+      var txt;
+      var r = confirm("Total a pagar: "+total+" Bs.";
+       if (r == true) {
+           txt = "You pressed OK!";
+        alert("Pedido Completado")
+       / } else {
+           txt = "You pressed Cancel";
+            alert("Pedido Cancelado")
+        } 
+    }*/
+
+</script>
+
+
+
+
+
+</body>
+</html>
